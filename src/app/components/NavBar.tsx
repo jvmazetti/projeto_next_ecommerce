@@ -5,6 +5,8 @@ export const BarraDeNavegacao = styled.nav`
   position: fixed;
   top: 0;
   max-width: 100%;
+  width: 1800px;
+  height: 80px;
   display: flex;
   align-items: center;
   padding:8px 32px;
@@ -17,9 +19,10 @@ const Link = styled.link`
   text-transform: uppercase;
   font-weight: bold;
   font-size: medium;
-  height: 48px;
+  height: 480px;
   display: flex;
   align-items: center;
+  color: white;
 `
 
 export const MainContainer = styled.main`
