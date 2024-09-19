@@ -1,11 +1,11 @@
 "use client"
 import styled from "styled-components";
 import { ProductType } from "@/types/ProductType";
+import Product from "./components/Product";
 
 const Container = styled.div`
   max-width: 1280px;
   margin: 0 auto;
-  border: 1px solid white;
   color: white;
   margin-top: 20px;
   padding-top: 32px;
@@ -35,9 +35,7 @@ export default async function Home() {
       <Container>
         <ListagemDeProdutos>
           {products.map((product: ProductType) => (
-            <div key={product.id}>
-              {product.title}
-            </div>
+            <Product key={product.id} product={product}></Product>
           ))}
         </ListagemDeProdutos>
       </Container>
